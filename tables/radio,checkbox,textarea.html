@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form radio, checkbox, textarea</title>
+</head>
+<body>
+
+    <h2>User Survey Form</h2>
+
+    <form>
+
+        <!-- Select (Dropdown) -->
+        <label>Choose your course:</label><br>
+        <select name="course">
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <br>
+
+        <!-- Checkboxes -->
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skill1"> HTML<br>
+        <input type="checkbox" name="skill2"> CSS<br>
+        <input type="checkbox" name="skill3"> JavaScript<br>
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
