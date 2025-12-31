@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Features pracice</title>
+</head>
+<body>
+
+    <h2>User Registration</h2>
+
+    <form>
+
+        <!-- Label + Placeholder + Required -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name"
+               required>
+        <br><br>
+
+        <!-- Email Validation -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="example@mail.com"
+               required>
+        <br><br>
+
+        <!-- Password Validation -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"
+               placeholder="Minimum 6 characters"
+               minlength="6"
+               required>
+        <br><br>
+
+        <!-- Number Validation -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"
+               min="18" max="60"
+               placeholder="18 to 60"
+               required>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
