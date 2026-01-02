@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data usage understanding</title>
+<title>working with data attribute and JavaScript</title>
 </head>
 <body>
 
-    <h2>User Info will be displayed on click</h2>
+    <button data-user="ajay" data-age="21"
+            onclick="showDetails(this)">
+        Show User Details
+    </button>
 
-    <p data-user="Ravi" data-age="21">
-        im ravi click me to see my data
-    </p>
+    <script>
+        function showDetails(element) {
+            alert(
+                "User: " + element.dataset.user +
+                "\nAge: " + element.dataset.age
+            );
+        }
+    </script>
 
 </body>
 </html>
